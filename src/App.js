@@ -2,23 +2,24 @@ import { Route, Routes } from 'react-router-dom';
 import './App.scss';
 import Footer from './components/Footer';
 import Header from './components/Header';
-import HomePage from './components/HomePage';
-import Main from "./components/Main/Main";
-import MasterClass from "./components/MasterClass/MasterClass";
+import ParentSchool from "./components/ParentSchool/ParentSchool";
+import AllCurs from "./components/ParentSchool/AllCurs/AllCurs";
+import MasterClass from "./components/ParentSchool/MasterClass/MasterClass";
 
 function App() {
-  return (
-    <div className="App">
-      <Header />
-        <div className='content'>
-        <Routes>
-          <Route path='/' element={<HomePage/>}/>
-          <Route path='/ourSchool' element={<Main/>}/>
-          {/*<Route path='/aboutUs' element={<MasterClass/>}/>*/}
-        </Routes>
-      </div>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Header/>
+            <div className='content'>
+                <Routes>
+                    <Route path='/ourSchool' element={<ParentSchool/>}/>
+                    <Route path="/all-curs" element={<AllCurs/>}/>
+                    <Route path="/master-klass" element={<MasterClass/>}/>
+                </Routes>
+            </div>
+            <Footer/>
+        </div>
+    );
 }
 
 export default App;
