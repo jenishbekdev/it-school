@@ -1,0 +1,29 @@
+#school {
+  background: #0A122BFF;
+  padding-top: 100px;
+
+  h3 {
+    color: white;
+    margin-left: 80px;
+    font-weight: 10;
+
+    span {
+      color: #a8a2a2;
+    }
+  }
+
+  .school {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    &__title {
+      color: white;
+
+      h1 {
+        padding: 10px 0;
+
+      }
+    }
+  }
+}
