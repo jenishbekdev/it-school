@@ -1,0 +1,53 @@
+#klass{
+  background: #0A122BFF;
+  padding-top: 100px;
+  h2{
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 250px;
+    color: white;
+    span{
+      color: rgba(255, 255, 255, 0.37);
+    }
+  }
+
+  h1{
+    font-size: 36px;
+    font-weight: 700;
+    color: white;
+    margin-left: 500px;
+    padding: 30px 0;
+
+  }
+  .klass{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    &__title{
+      border-radius: 10px;
+      margin: 20px 0;
+      width: 1030px;
+      height: 200px;
+      background: white;
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      flex-wrap: wrap;
+       h2{
+         font-size: 20px;
+         color: #043F75;
+         font-weight: 500;
+         margin-left: 70px;
+         margin-top: 50px;
+       }
+      p{
+        font-size: 16px;
+        color: black;
+        margin-left: 70px;
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
