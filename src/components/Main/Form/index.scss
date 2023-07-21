@@ -1,0 +1,28 @@
+#Form {
+  margin-top: 200px;
+  .Form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .Forms {
+      text-align: center;
+      h1 {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        color: #FFF;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+      p {
+        color: rgba(255, 255, 255, 0.9);
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+  }
+}

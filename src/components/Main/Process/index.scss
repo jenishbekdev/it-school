@@ -1,0 +1,48 @@
+#Process {
+  margin-top: 10%;
+  h1 {
+    color: #FFF;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .Process {
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__divs {
+      width: 236.308px;
+      height: 236.308px;
+      flex-shrink: 0;
+      border-radius: 7.877px;
+      border: 0.788px solid #0272CE;
+      background: linear-gradient(180deg, rgba(0, 84, 160, 0.20) 0%, rgba(0, 11, 48, 0.20) 100%);
+      backdrop-filter: blur(17.32923126220703px);
+      h2 {
+        color: #FFF;
+        font-size: 28.357px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+      span {
+        color: #FFF;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+      p{
+        color: #FFF;
+        text-align: center;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+  }
+}
