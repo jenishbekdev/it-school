@@ -2,7 +2,6 @@ import {Route, Routes} from 'react-router-dom';
 import './App.scss';
 import Footer from './components/Footer';
 import Header from './components/Header';
-import HomePage from './components/HomePage';
 import ParentSchool from "./components/ParentSchool/ParentSchool";
 import AllCurs from "./components/ParentSchool/AllCurs/AllCurs";
 import MasterClass from "./components/ParentSchool/MasterClass/MasterClass";
@@ -13,7 +12,6 @@ function App() {
             <Header/>
             <div className='content'>
                 <Routes>
-                    <Route path='/' element={<HomePage/>}/>
                     <Route path='/ourSchool' element={<ParentSchool/>}/>
                     <Route path="/all-curs" element={<AllCurs/>}/>
                     <Route path="/master-klass" element={<MasterClass/>}/>

@@ -32,7 +32,6 @@ const Master = () => {
                 </div>
                 <button><NavLink to="/master-klass">Все мастер классы</NavLink></button>
             </div>
-
         </div>
     );
 };
