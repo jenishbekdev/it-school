@@ -1,6 +1,6 @@
-#accordion {
-  .accordion {
-    padding: 100px 0 0 0;
+#faq {
+  margin-top: 20%;
+  .faq {
     span {
       font-size: 18px;
       font-weight: 400;
@@ -20,7 +20,6 @@
     }
 
     &--we {
-      display: flex;
       &__left {
         width: 800.011px;
         cursor: pointer;
@@ -56,8 +55,6 @@
                 color: #FFFFFF;
                 p{
                   width: 800px;
-                  font-size: 20px;
-                  font-weight: 400;
                 }
               }
             }

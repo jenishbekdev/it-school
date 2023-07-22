@@ -1,5 +1,5 @@
 #AboutCurs {
-  padding-top: 12%;
+  padding-top: 17%;
 
   .AboutCurs {
 
@@ -31,13 +31,10 @@
           margin-top: 50px;
           width: 738px;
           height: 240px;
-          top: 968px;
-          left: 135px;
-          font-size: 15px;
-          font-weight: 400;
+          font-size: 20px;
+          font-weight: 200;
           line-height: 20px;
-          text-align: left;
-          color: rgba(255, 255, 255, 0.82);
+          color: rgba(255, 253, 253, 0.94);
         }
 
         h3 {
@@ -68,8 +65,7 @@
           margin-top: 30px;
           width: 479px;
           height: 24px;
-          top: 1342px;
-          left: 134px;
+          color: rgba(255, 255, 255, 0.9);
         }
 
         h2 {
@@ -91,21 +87,21 @@
 
         &__h4 {
           h5 {
-            color: rgba(255, 255, 255, 0.8);
-            font-size: 15px;
+            color: rgba(255, 255, 255, 0.91);
+            font-size: 20px;
             font-style: normal;
             padding: 15px 0;
-            font-weight: 400;
+            font-weight: 300;
           }
         }
 
         &__h5 {
           h5 {
-            color: rgba(255, 255, 255, 0.8);
-            font-size: 15px;
+            color: rgba(255, 255, 255, 0.91);
+            font-size: 20px;
             font-style: normal;
             padding: 8px 0;
-            font-weight: 400;
+            font-weight: 300;
             margin-bottom: 20px;
           }
         }
@@ -132,30 +128,39 @@
         }
 
         h4 {
-          color: #FFF;
+          color: #ffffff;
           font-size: 20px;
           font-style: normal;
-          font-weight: 600;
+          font-weight: 500;
           line-height: normal;
-          padding: 50px 0;
+          padding: 70px 0;
         }
 
-        &__btn {
-          margin-top: 60px;
+        &--btn {
+          margin-top: 50px;
           display: flex;
           align-items: center;
           justify-content: space-between;
           margin-right: 40%;
-
-          button {
-            display: inline-flex;
-            padding: 25px 80px;
-            align-items: flex-start;
-            gap: 5px;
+         &__but1 {
+           width: 327px;
+           height: 70px;
+           padding: 25px 75px 25px 75px;
+           border-radius: 10px;
+           background: #044076;
+           color: #FFFFFF;
+           border: 2px solid #043F75;
+           font-weight: 500;
+           font-size: 16px;
+         }
+          &__but2 {
+            width: 327px;
+            height: 70px;
+            padding: 25px 75px 25px 75px;
             border-radius: 10px;
-            background: #044076;
-            box-shadow: 3px 2px 13px 0 rgba(0, 0, 0, 0.07), -2px -2px 8px 0px rgba(0, 0, 0, 0.20);
-            color: white;
+            background: #0A1128;
+            color: #FFFFFF;
+            border: 2px solid #043F75;
           }
         }
       }

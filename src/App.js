@@ -5,6 +5,8 @@ import Header from './components/Header';
 import ParentSchool from "./components/ParentSchool/ParentSchool";
 import AllCurs from "./components/ParentSchool/AllCurs/AllCurs";
 import MasterClass from "./components/ParentSchool/MasterClass/MasterClass";
+import Main from "./components/Main/Main";
+import MasterMain from "./components/MasterClass/MasterMain";
 
 function App() {
     return (
@@ -12,9 +14,11 @@ function App() {
             <Header/>
             <div className='content'>
                 <Routes>
+                    <Route path='/curs' element={<Main/>}/>
                     <Route path='/ourSchool' element={<ParentSchool/>}/>
                     <Route path="/all-curs" element={<AllCurs/>}/>
                     <Route path="/master-klass" element={<MasterClass/>}/>
+                    <Route path="/aboutUs" element={<MasterMain/>}/>
                 </Routes>
             </div>
             <Footer/>
