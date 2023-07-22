@@ -13,7 +13,6 @@ const ParentSchool = () => {
             <Master/>
             <Card/>
             <SliderPage/>
-
         </>
     );
 };
