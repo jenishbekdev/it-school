@@ -9,15 +9,19 @@ const Curs = () => {
             <div className="container">
                 <h2>Курсы</h2>
                 <div className="curs">
-                    <div className="curs__card">
-                        <h1>Frontend-разработчик</h1>
-                        <p>Мастер создания сайтов. Умеет делать их красивыми, интерактивными, с большим функционалом.
-                            Профессия отлично подойдет тем, кто хочет фрилансить и постоянно разрабатывать новые проекты</p>
-                        <div className="curs__card--link">
-                            <h3>Подробнее</h3>
-                            <BsArrowRight/>
+                    <NavLink to="/curs">
+                        <div className="curs__card">
+                            <h1>Frontend-разработчик</h1>
+                            <p>Мастер создания сайтов. Умеет делать их красивыми, интерактивными, с большим
+                                функционалом.
+                                Профессия отлично подойдет тем, кто хочет фрилансить и постоянно разрабатывать новые
+                                проекты</p>
+                            <div className="curs__card--link">
+                                <h3>Подробнее</h3>
+                                <BsArrowRight/>
+                            </div>
                         </div>
-                    </div>
+                    </NavLink>
                     <div className="curs__card">
                         <h1>Backend-разработчик</h1>
                         <p>
