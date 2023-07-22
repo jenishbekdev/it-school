@@ -1,5 +1,6 @@
 import React from 'react';
 import './index.scss'
+import {NavLink} from "react-router-dom";
 
 
 const Card = () => {
@@ -17,7 +18,9 @@ const Card = () => {
                         <h4>Ежемесячно</h4>
                         <div className="card__block--btn">
                             <button className="card__block--btn__btn1">Оформить подписку</button>
-                            <button className="card__block--btn__btn2">Подробнее</button>
+                            <NavLink to="/choose">
+                                <button className="card__block--btn__btn2">Подробнее</button>
+                            </NavLink>
                         </div>
                     </div>
                     <div className="card__block">

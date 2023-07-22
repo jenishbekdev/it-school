@@ -1,0 +1,110 @@
+#choose {
+  h5 {
+    padding: 50px 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-left: 70px;
+  }
+
+  h1 {
+    font-size: 36px;
+    padding: 20px 0;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-left: 500px;
+  }
+
+  .choose {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+
+    &__card {
+      Width: 349px;
+      Height: 481px;
+      background: white;
+      border-radius: 10px;
+
+      h2 {
+        padding: 20px 0;
+        margin-left: 50px;
+        font-size: 16px;
+        font-weight: 600;
+      }
+
+      h3 {
+        margin-left: 50px;
+        font-weight: 700;
+        font-size: 36px;
+      }
+
+      h4 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        margin-left: 50px;
+        width: 112px;
+        height: 35px;
+        border: 1px solid #11416F;
+        border-radius: 5px;
+        font-size: 12px;
+        font-weight: 500;
+
+      }
+
+      p {
+        margin-left: 50px;
+        margin-top: 10px;
+        padding: 6px 0;
+        color: black;
+      }
+
+      h6 {
+        font-weight: 500;
+        font-size: 16px;
+        margin-left: 50px;
+        margin-top: 30px;
+      }
+
+       &--btn{
+         button {
+           margin-top: 200px;
+           Width: 178px;
+           Height: 40px;
+           background: #043C6F;
+           margin-left: 70px;
+           color: #FFFFFF;
+           border: 4px solid transparent;
+           border-radius: 5px;
+         }
+       }
+      &--btn1{
+        button {
+          margin-top: 160px;
+          Width: 178px;
+          Height: 40px;
+          background: #043C6F;
+          margin-left: 70px;
+          color: #FFFFFF;
+          border: 4px solid transparent;
+          border-radius: 5px;
+        }
+      }
+      &--btn2{
+        button {
+          margin-top: 60px;
+          Width: 178px;
+          Height: 40px;
+          background: #043C6F;
+          margin-left: 70px;
+          color: #FFFFFF;
+          border: 4px solid transparent;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}

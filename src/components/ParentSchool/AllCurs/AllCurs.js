@@ -1,23 +1,28 @@
 import React from 'react';
 import './index.scss'
 import {BsArrowRight} from "react-icons/bs";
+import {NavLink} from "react-router-dom";
 
 const Curses = () => {
     return (
         <div id="curses">
             <div className="container">
-                <h5> <span>Главная /</span> Наши курсы</h5>
+                <h5><span>Главная /</span> Наши курсы</h5>
                 <h2>Курсы</h2>
                 <div className="curses">
-                    <div className="curses__card">
-                        <h1>Frontend-разработчик</h1>
-                        <p>Мастер создания сайтов. Умеет делать их красивыми, интерактивными, с большим функционалом.
-                            Профессия отлично подойдет тем, кто хочет фрилансить и постоянно разрабатывать новые проекты</p>
-                        <div className="curses__card--link">
-                            <h3>Подробнее</h3>
-                            <BsArrowRight/>
+                    <NavLink to="/curs">
+                        <div className="curses__card">
+                            <h1>Frontend-разработчик</h1>
+                            <p>Мастер создания сайтов. Умеет делать их красивыми, интерактивными, с большим
+                                функционалом.
+                                Профессия отлично подойдет тем, кто хочет фрилансить и постоянно разрабатывать новые
+                                проекты</p>
+                            <div className="curses__card--link">
+                                <h3>Подробнее</h3>
+                                <BsArrowRight/>
+                            </div>
                         </div>
-                    </div>
+                    </NavLink>
                     <div className="curses__card">
                         <h1>Backend-разработчик</h1>
                         <p>
