@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.scss'
-
+import { NavLink } from 'react-router-dom';
 const FrontEnd = () => {
     return (
         <div id="FrontEnd">
@@ -12,7 +12,8 @@ const FrontEnd = () => {
                         <p>Идея реактивного программирования появилась сравнительно недавно, лет 10 назад. Что вызвало
                             популярность этого относительно нового подхода и почему сейчас он в тренде, рассказал на
                             конференции </p>
-                        <button>Купить курс за 46 $</button>
+                            <NavLink to={"/buyCourse"}>  <button>Купить курс за 46 $</button>
+                             </NavLink>
                     </div>
                     <div className="FrontEnd2">
                         <div className="FrontEnd2__text">
