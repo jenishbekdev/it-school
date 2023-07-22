@@ -1,5 +1,129 @@
-#Class {
-  .Class {
+#class {
+  margin-top: 160px;
 
+  span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #A5A5A5;
+  }
+
+  .class--main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 0;
+
+    &__class {
+      h1 {
+        padding-top: 50px;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 44px;
+        color: #FFFFFF;
+      }
+
+      p {
+        padding-top: 40px;
+        width: 600px;
+        color: rgba(255, 255, 255, 0.93);
+        font-size: 20px;
+        font-weight: 80;
+      }
+
+      &--title {
+        padding: 80px 0;
+
+        h2 {
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 24px;
+          color: #FFFFFF;
+          padding: 23px 0;
+        }
+
+        li {
+          font-size: 17px;
+          font-weight: 400;
+          line-height: 24px;
+          color: rgba(255, 255, 255, 0.83);
+          padding: 10px 0;
+        }
+
+        &--btn {
+          margin-top: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-left: -20px;
+          &__but1 {
+            width: 307px;
+            height: 70px;
+            border-radius: 10px;
+            background: #044076;
+            color: #FFFFFF;
+            border: 2px solid #043F75;
+            font-weight: 500;
+            font-size: 16px;
+            margin: 20px;
+          }
+
+          &__but2 {
+            width: 307px;
+            height: 70px;
+            border-radius: 10px;
+            background: #0A1128;
+            color: #FFFFFF;
+            border: 2px solid #043F75;
+            font-weight: 500;
+            font-size: 16px;
+            margin: 20px;
+          }
+        }
+
+      }
+    }
+
+    &__title2 {
+      margin-top: -320px;
+
+      &--span1 {
+        span {
+          font-size: 20px;
+          font-weight: 200;
+          line-height: 24px;
+          width: 78px;
+        }
+
+        h3 {
+          padding-top: 13px;
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 24px;
+          color: #FFFFFF;
+        }
+      }
+
+      &--span2 {
+        margin-top: 50px;
+
+        span {
+          font-size: 20px;
+          font-weight: 200;
+          line-height: 24px;
+          width: 78px;
+        }
+
+        h3 {
+          padding-top: 13px;
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 24px;
+          color: #FFFFFF;
+        }
+      }
+    }
   }
 }
+
+

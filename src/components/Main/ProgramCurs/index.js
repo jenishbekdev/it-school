@@ -6,7 +6,7 @@ const ProgramCurs = () => {
     return (
         <div id="ProgramCurs">
             <div className="container">
-                <h1>ПРОГРАММА КУРСА</h1>
+                <h1>ПРОГРАММА МАСТЕР-КЛАССА</h1>
                 <div className="ProgramCurs">
                     <div className="">
                         <div className="ProgramCurs__input">
@@ -38,7 +38,6 @@ const ProgramCurs = () => {
                     <div className="ProgramCurs__img">
                         <img src={man} alt=""/>
                     </div>
-
                 </div>
             </div>
         </div>
