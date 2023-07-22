@@ -1,0 +1,58 @@
+#Program {
+  h1{
+    margin-top: 150px;
+    color: #FFF;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .Program {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 240px;
+    &__input {
+      display: flex;
+      align-items: center;
+      margin-top: 30px;
+      width: 500px;
+      height: 70px;
+      border-radius: 10px;
+      border: 1px solid #044076;
+      h2 {
+        margin-left: 40px;
+        font-size: 25px;
+        font-weight: 600;
+        color: #FFFFFF;
+      }
+      span {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        color: #FFFFFF;
+        margin-left: 40px;
+      }
+    }
+    button {
+      display: inline-flex;
+      margin-top: 30px;
+      padding: 25px 75px;
+      align-items: flex-start;
+      border-radius: 10px;
+      background: #044076;
+      box-shadow: 3px 2px 13px 0 rgba(0, 0, 0, 0.07), -2px -2px 8px 0px rgba(0, 0, 0, 0.20);
+      color: #FFF;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+    &__img {
+      img {
+        margin-top: -70%;
+        width: 150%;
+      }
+    }
+  }
+}
