@@ -9,6 +9,11 @@ const Curs = () => {
             <div className="container">
                 <h2>Курсы</h2>
                 <div className="curs">
+                    <NavLink to={'/curs'}>
+                        <div className="curs__card">
+                            <h1>Frontend-разработчик</h1>
+                            <p>Мастер создания сайтов. Умеет делать их красивыми, интерактивными, с большим функционалом.
+                                Профессия отлично подойдет тем, кто хочет фрилансить и постоянно разрабатывать новые проекты</p>
                     <NavLink to="/curs">
                         <div className="curs__card">
                             <h1>Frontend-разработчик</h1>
