@@ -42,9 +42,7 @@ const Card = () => {
                             <button className="card__block--btn__btn1">Оформить подписку</button>
                             <button className="card__block--btn__btn2">Подробнее</button>
                         </div>
-
                     </div>
-
                 </div>
             </div>
         </div>

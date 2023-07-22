@@ -19,7 +19,7 @@ function App() {
 
             <div className='content'>
                 <Routes>
-                <Route path='/' element={<HomePage/>}/>
+            <Route path='/' element={<HomePage/>}/>
                     <Route path='/curs' element={<Main/>}/>
                     <Route path='/ourSchool' element={<ParentSchool/>}/>
                     <Route path="/all-curs" element={<AllCurs/>}/>
