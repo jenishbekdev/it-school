@@ -2,57 +2,54 @@ import React from 'react';
 import './index.scss'
 import {AiOutlineCheck} from "react-icons/ai";
 
+
 const Block = () => {
     return (
         <div id="block">
             <div className="container">
                 <h1>Процесс обучения</h1>
-                <span>Каждый из наших мастер-классов состоит из 2-8 уроков. Рекомендуем <br/>
-                    проходить мастер-класс последовательно, урок за уроком</span>
-                <div className="block">
-                    <div className="block--main">
-                        <div className="block--main__divs">
-                            <h2>1</h2><br/>
-                            <h4>Мастер-класс</h4>
-                            <p>Вы получите доступ ко <br/>всем урокам мастер- <br/>класса и
-                                другим <br/>дополнительным <br/>материалам</p>
+                <h2>Каждый из наших мастер-классов состоит из2-8 уроков. Рекомендуем <br/>проходить мастер-класс последовательно, урок за уроком</h2>
+                <div className="main">
+                    <div className="block">
+                        <div className="block--divs">
+                            <h3>1</h3>
+                            <h2>Мастер-класс</h2>
+                            <p>Вы получите доступ ко всем урокам мастер-класса и другим дополнительным материалам</p>
                         </div>
-                        <div className="block--main__divs">
-                            <h2>2</h2> <br/>
-                            <h4>Своё расписание</h4>
-                            <p>Доступ к мастер-классам <br/>открыт 24/7. Вы сами <br/>решаете, когда у вас <br/>следующий
-                                урок</p>
+                        <div className="block--divs">
+                            <h3>2</h3>
+                            <h2>Своё расписание</h2>
+                            <p>Доступ к мастер-классам открыт 24/7. Вы сами решаете, когда у вас следующий урок</p>
                         </div>
-                        <div className="block--main__divs">
-                            <h2>3</h2> <br/>
-                            <h4>Сообщество</h4>
-                            <p>Вы сможете общаться и <br/>обмениваться мнениями с <br/>другими учениками в <br/>комментариях
-                            </p>
+                        <div className="block--divs">
+                            <h3>3</h3>
+                            <h2>Сообщество</h2>
+                            <p> Вы сможете общаться и обмениваться мнениями с другими учениками в комментариях</p>
                         </div>
-                        <div className="block--main__divs">
-                            <h2>4</h2> <br/>
-                            <h4>Доступ</h4>
-                            <p>Мы предоставляем вам 6 <br/>неделный доступ к <br/>материалам оплаченного <br/>мастер-класса
-                            </p>
+                        <div className="block--divs">
+                            <h3>4</h3>
+                            <h2>Доступ</h2>
+                            <p>Мы предоставляем вам 6 неделный  доступ к материалам оплаченного мастер-класса</p>
                         </div>
-
                     </div>
-                    <div className="block--main__left">
-                        <h1>Мастер-класс “Реактивное программирование на Java : как, зачем и стоит ли? Часть 1”</h1>
-                        <h2>46,00 $</h2>
-                        <div className="block--main__left--icon">
-                            <h5><AiOutlineCheck/></h5>
-                            <h3>Доступ к мастер классу навсегда</h3>
+                    <div className="block--divs__box">
+                        <p>Мастер-класс “Реактивное программирование на Java : как, зачем и стоит ли? Часть 1”</p>
+                        <h3>46,00 $</h3>
+                        <div className="block--divs__box--icon">
+                            <div className="block--divs__box--icon__main">
+                                <AiOutlineCheck/>
+                                <h4>Доступ к мастер классу навсегда</h4>
+                            </div>
+                            <div className="block--divs__box--icon__main">
+                                <AiOutlineCheck/>
+                                <h4>Доступны все 5 уроков</h4>
+                            </div>
+                            <div className="block--divs__box--icon__main">
+                                <AiOutlineCheck/>
+                                <h4>Дополнительные материалы</h4>
+                            </div>
+                            <button>Купить мастер-класс</button>
                         </div>
-                        <div className="block--main__left--icon">
-                            <h5><AiOutlineCheck/></h5>
-                            <h3>Доступ к мастер классу навсегда</h3>
-                        </div>
-                        <div className="block--main__left--icon">
-                            <h5><AiOutlineCheck/></h5>
-                            <h3>Доступ к мастер классу навсегда</h3>
-                        </div>
-                        <button>Купить мастер-класс</button>
                     </div>
                 </div>
             </div>

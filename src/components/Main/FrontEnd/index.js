@@ -26,8 +26,10 @@ const FrontEnd = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </  div>
     );
 };
 
 export default FrontEnd;
+
+

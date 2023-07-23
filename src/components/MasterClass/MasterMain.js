@@ -4,7 +4,7 @@ import Class from "./Class";
 import Program from "./Program";
 import Image from "./Image";
 import Block from "./Block";
-import Faq from "./FAQ";
+import Faq from "../Main/FAQ";
 
 const MasterMain = () => {
     return (
@@ -14,7 +14,7 @@ const MasterMain = () => {
             <Program/>
             <Image/>
             <Block/>
-            <Faq    />
+            <Faq/>
         </div>
     );
 };

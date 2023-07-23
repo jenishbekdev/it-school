@@ -1,8 +1,6 @@
 #header {
-  background: #000;
-  padding: 28px 0;
-  position: sticky;
-  top: 0;
+  background: rgba(8, 16, 35, 0.4);
+  padding: 23px 0;
   .header {
     display: flex;
     justify-content: space-between;
@@ -13,20 +11,26 @@
     .menu {
       display: flex;
       gap: 24px;
+      list-style: none;
       a {
         color: #fff;
       }
     }
     &__btn {
       display: flex;
-      justify-content: center;
+      justify-content: space-around;
       align-items: center;
       button {
+        font-family: Montserrat, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: center;
         width: 207px;
         height: 46px;
-        flex-shrink: 0;
         border-radius: 5px;
-        background: #034078;
+        background: #0a569b;
+        color: white;
       }
     }
   }

@@ -10,7 +10,7 @@ const Master = () => {
                 <div className="Master">
                     <span>Мастер класс ведет</span>
                     <h1>Евгений Александрович</h1>
-                    <span> Frontend developer </span>
+                    <span>Frontend developer</span>
                 </div>
             </div>
         </div>

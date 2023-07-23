@@ -11,7 +11,7 @@ const Image = () => {
                     <div className="Master">
                         <span>Мастер класс ведет</span>
                         <h1>Евгений Александрович</h1>
-                        <span> Frontend developer </span>
+                        <span> Frontend developer / Аратор  </span>
                     </div>
                 </div>
             </div>

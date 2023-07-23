@@ -1,26 +1,26 @@
-#accordion {
-  .accordion {
-    padding: 100px 0 0 0;
+#faq {
+  padding: 150px 0;
+  .faq {
     span {
-      font-size: 18px;
-      font-weight: 400;
+      font-family: Montserrat, sans-serif;
+      font-size: 20px;
+      font-weight: 500;
       line-height: 24px;
       color: #A5A5A5;
     }
     &--right {
       h1 {
+        font-family: Montserrat, sans-serif;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 44px;
         margin-top: 30px;
         color: #FFF;
-        font-size: 48px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 45px;
-        padding: 0 0 40px 0;
+        padding: 0 0 5px 0;
       }
     }
 
     &--we {
-      display: flex;
       &__left {
         width: 800.011px;
         cursor: pointer;
@@ -33,10 +33,13 @@
           justify-content: space-between;
 
           &__accord {
-            margin: 1.4rem 0;
-            font-size: 1.2rem;
+            font-family: Montserrat, sans-serif;
+            font-size: 20px;
             font-weight: 500;
-            color: white;
+            line-height: 24px;
+            text-align: left;
+            margin: 1.4rem 0;
+            color: #FFFFFF;
             &--btn {
               font-size: 1.5rem;
               background: transparent;
@@ -55,9 +58,11 @@
                 line-height: 20px;
                 color: #FFFFFF;
                 p{
-                  width: 800px;
+                  font-family: Montserrat, sans-serif;
                   font-size: 20px;
-                  font-weight: 400;
+                  font-weight: 500;
+                  line-height: 24px;
+                  width: 698px;
                 }
               }
             }

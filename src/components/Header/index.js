@@ -12,8 +12,8 @@ const Header = () => {
           </div>
           <ul className="menu">
             <li className="menu__item"><NavLink to={'/ourSchool'}>О школе</NavLink></li>
-            <li className="menu__item"><NavLink to={'/aboutcours'}>Наши курсы</NavLink></li>
-            <li className="menu__item"><NavLink to={'/aboutUs'}>О нас</NavLink></li>
+            <li className="menu__item"><NavLink to={'/aboutCourse'}>Наши курсы</NavLink></li>
+            <li className="menu__item"><NavLink to={'/our'}>О нас</NavLink></li>
           </ul>
           <div className="header__btn">
             <Link>Войти</Link>

@@ -5,7 +5,7 @@ import ProgramCurs from "./ProgramCurs";
 import Form from "./Form";
 import Master from "./Master";
 import Process from "./Process";
-import Accordion from "./Accordion";
+import Faq from "./FAQ";
 
 
 const Main = () => {
@@ -17,7 +17,7 @@ const Main = () => {
             <Form/>
             <Master/>
             <Process/>
-            <Accordion/>
+            <Faq/>
         </div>
     );
 };
