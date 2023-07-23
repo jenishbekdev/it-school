@@ -1,6 +1,7 @@
 import React from "react";
 import articles from "../../../img/Articles.png";
 import { RxReader } from "react-icons/rx";
+import { Link } from "react-router-dom";
 const More = () => {
   return (
     <div id="articles">
@@ -11,8 +12,8 @@ const More = () => {
           </h3>
           <h2>Статьи</h2>
           <div className="articles__block">
-            <div className="articles__card">
-              <img src={articles} alt="" />
+            <Link to='/BlockDetails' className="articles__card">
+              <img src={articles} alt="img" />
               <div className="articles__card-block">
                 <span className="articles__card-block-state">Статьи</span>
                 <p>
@@ -27,7 +28,7 @@ const More = () => {
                   <span className="articles__card-date-data">01.02.2022</span>
                 </ul>
               </div>
-            </div>
+            </Link>
             <div className="articles__card">
               <img src={articles} alt="" />
               <div className="articles__card-block">

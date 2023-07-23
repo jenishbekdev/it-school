@@ -6,6 +6,7 @@ import ParentSchool from "./components/ParentSchool/ParentSchool";
 import AllCurs from "./components/ParentSchool/AllCurs/AllCurs";
 import MasterClass from "./components/ParentSchool/MasterClass/MasterClass";
 import HomePage from './components/HomePage';
+import BlockDetails from './components/HomePage/DlockDetails';
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
                     <Route path='/' element={<HomePage/>}/>
                     <Route path='/ourSchool' element={<ParentSchool/>}/>
                     <Route path="/all-curs" element={<AllCurs/>}/>
+                    <Route path="/BlockDetails" element={<BlockDetails/>}/>
                     <Route path="/master-klass" element={<MasterClass/>}/>
                 </Routes>
             </div>
