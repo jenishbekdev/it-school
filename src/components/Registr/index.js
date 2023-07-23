@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { BsCreditCard } from "react-icons/bs";
 import "./index.scss";
+import { Link } from "react-router-dom";
 
 const Registr = () => {
   const [top, setTop] = useState(false);
@@ -292,6 +293,7 @@ const Registr = () => {
                   <p style={{ padding: "0 0 15px 50px" }}>
                     Теперь вам доступен курс “Frontend разработчик”
                   </p>
+                  <Link to='/pass'>
                   <button
                     className="top"
                     style={{
@@ -303,6 +305,7 @@ const Registr = () => {
                   >
                     Ок, посмотреть покупку{" "}
                   </button>
+                  </Link>
                   <h1
                     onClick={() => setTop(false)}
                     style={{

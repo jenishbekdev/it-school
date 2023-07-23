@@ -1,0 +1,60 @@
+#youtube {
+    .container {
+        .youtube {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+
+            .youtube-front {
+                h1 {
+                    font-size: 36px;
+                    color: white;
+                }
+
+                p {
+                    color: white;
+                    width: 500px;
+                    line-height: 24px;
+                    padding: 20px 0;
+                }
+            }
+
+            .youtube-progres {
+                h4 {
+                    font-size: 20px;
+                    color: white;
+                    line-height: 24px;
+                }
+
+                input {
+                    padding: 25px 150px;
+                }
+
+                .mud {
+                    display: flex;
+                    justify-content: start;
+
+                    h3 {
+                        color: white;
+                        font-size: 16px;
+                        line-height: 24px;
+                        font-family: Poppins;
+                    }
+
+                    h2 {
+                        font-size: 20px;
+                        line-height: 24px;
+                        color: white;
+                        font-family: Montserrat;
+                        padding: 10px 0;
+                        text-align: center;
+                    }
+
+                    div {
+                        padding-right: 150px;
+                    }
+                }
+            }
+        }
+    }
+}

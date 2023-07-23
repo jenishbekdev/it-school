@@ -11,6 +11,7 @@ import MasterMain from "./components/MasterClass/MasterMain";
 import ParentsDetaile from "./ParentsDetile/ParentsDetaile";
 import Registr from "../src/components/Registr/index"
 import Curs from './components/ParentSchool/Curs';
+import Youtube from './components/Registr/Youtube';
 
 function App() {
     return (
@@ -21,7 +22,7 @@ function App() {
             <div className='content'>
                 <Routes>
                 {/* <Route path='/' element={<HomePage/>}/> */}
-                 <Route path='/buyCourse' element={<Registr/> }/>
+                    <Route path='/buyCourse' element={<Registr/> }/>
                     <Route path='/curs' element={<Main/>}/>
                     <Route path='/ourSchool' element={<ParentSchool/>}/>
                     <Route path="/all-curs" element={<AllCurs/>}/>
@@ -33,7 +34,7 @@ function App() {
                     <Route path="/master-klass" element={<MasterClass/>}/>
                     <Route path="/choose" element={<ParentsDetaile/>}/>
                     <Route path="/aboutcours" element={<Curs/>}/>
-
+                    <Route path='/pass' element={<Youtube/>}/>
                 </Routes>
             </div>
             <Footer/>
