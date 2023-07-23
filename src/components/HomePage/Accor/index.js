@@ -18,9 +18,9 @@ const Accor = () => {
         <div className="accor">
           <div className="accor__Question">
             <h1>
-              ОСТАЛИСЬ <br /> ВОПРОСЫ?
+              ОСТАЛИСЬ <br/> ВОПРОСЫ?
             </h1>
-            <img src={ask} alt="" />
+            <img src={ask} alt="img" />
           </div>
           <div className="accor__all">
             <div className="accor__all-item">
