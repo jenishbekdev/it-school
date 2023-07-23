@@ -3,6 +3,7 @@ import './App.scss';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import HomePage from './components/HomePage';
+import Registr from './components/Registr';
 import ParentSchool from "./components/ParentSchool/ParentSchool";
 import AllCurs from "./components/ParentSchool/AllCurs/AllCurs";
 import MasterClass from "./components/ParentSchool/MasterClass/MasterClass";
@@ -12,6 +13,7 @@ import ParentsDetaile from "./ParentsDetile/ParentsDetaile";
 import Registr from "../src/components/Registr/index"
 import Curs from './components/ParentSchool/Curs';
 import Youtube from './components/Registr/Youtube';
+import HomePage from "./components/HomePage";
 
 function App() {
     return (
@@ -23,6 +25,7 @@ function App() {
                 <Routes>
                 {/* <Route path='/' element={<HomePage/>}/> */}
                     <Route path='/buyCourse' element={<Registr/> }/>
+            <Route path='/' element={<HomePage/>}/>
                     <Route path='/curs' element={<Main/>}/>
                     <Route path='/ourSchool' element={<ParentSchool/>}/>
                     <Route path="/all-curs" element={<AllCurs/>}/>
