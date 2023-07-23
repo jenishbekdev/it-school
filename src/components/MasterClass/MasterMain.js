@@ -14,7 +14,7 @@ const MasterMain = () => {
             <Program/>
             <Image/>
             <Block/>
-            <Faq    />
+            <Faq/>
         </div>
     );
 };

@@ -13,6 +13,8 @@ function App() {
     return (
         <div className="App">
             <Header/>
+            {/*<Registr/>*/}
+
             <div className='content'>
                 <Routes>
                     <Route path='/curs' element={<Main/>}/>
