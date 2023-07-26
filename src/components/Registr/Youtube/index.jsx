@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "./index.scss";
 import Play from "../Play";
 
 const Youtube = () => {
+  const [progressPercentage, setProgressPercentage] = useState(0);
+  const handleProgressChange = (event) => {
+    setProgressPercentage(parseInt(event.target.value, 10));
+  };
   return (
     <div id="youtube">
       <div className="container">
@@ -31,7 +35,16 @@ const Youtube = () => {
           </div>
           <div className="youtube-progres">
             <h4>Прогресс по курсу</h4>
-            <input type="range" id="volume" name="volume" min="0" max="10" />
+            <h5>{progressPercentage}%</h5>
+            <input
+              value={progressPercentage}
+              onChange={handleProgressChange}
+              type="range"
+              // id="volume"
+              name="volume"
+              min="0"
+              max="100"
+            />
             <div className="mud">
               <div>
                 <h3>
@@ -54,5 +67,5 @@ const Youtube = () => {
     </div>
   );
 };
-
+// };
 export default Youtube;
