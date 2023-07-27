@@ -12,6 +12,8 @@ import ParentsDetaile from "./ParentsDetile/ParentsDetaile";
 import Registr from "../src/components/Registr/index";
 import Curs from "./components/ParentSchool/Curs";
 import Youtube from "./components/Registr/Youtube";
+import BlockDetails from "./Page/BlockDetails";
+import BtnDetails from "./Page/BtnDetails";
 
 function App() {
   return (
@@ -20,7 +22,8 @@ function App() {
 
       <div className="content">
         <Routes>
-          {/* <Route path='/' element={<HomePage/>}/> */}
+          <Route path="/BtnDetails" element={<BtnDetails />} />
+          <Route path="/BlockDetails" element={<BlockDetails />} />
           <Route path="/buyCourse" element={<Registr />} />
           <Route path="/" element={<HomePage />} />
           <Route path="/curs" element={<Main />} />
