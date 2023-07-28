@@ -13,6 +13,10 @@
       display: flex;
       align-items: center;
       img {
+        width: 72px;
+        height: 45px;
+      }
+      img {
         margin-left: 70px;
         width: 72px;
         height: 45px;
@@ -40,7 +44,7 @@
       align-items: center;
       gap: 25px;
       a {
-        font-weight: 600;
+        font-weight: 500;
         font-size: 16px;
         text-align: center;
         color: #ffffff;
@@ -53,7 +57,7 @@
         border-radius: 5px;
         padding: 14px 0;
         min-width: 207px;
-        width: 100%;
+        // width: 100%;
       }
     }
   }
