@@ -1,19 +1,19 @@
 import React from 'react';
 import './index.scss'
-import { NavLink } from 'react-router-dom';
+import {NavLink} from "react-router-dom";
+
 const FrontEnd = () => {
     return (
         <div id="FrontEnd">
             <div className="container">
-                <h1 className='FrontEnd__h1'>Главная / Наши курсы / <span>Frontend- разработчик</span></h1>
+                <h1><NavLink to="/">Главная / </NavLink><NavLink to="/all-curs">Наши курсы / </NavLink><span>Frontend- разработчик</span></h1>
                 <div className="FrontEnd">
                     <div className="FrontEnd1">
-                        <h1>Frontend-разработчик</h1>
-                        <p>Идея реактивного программирования появилась сравнительно недавно, лет 10 назад. Что вызвало
-                            популярность этого относительно нового подхода и почему сейчас он в тренде, рассказал на
-                            конференции </p>
-                            <NavLink to={"/buyCourse"}>  <button>Купить курс за 46 $</button>
-                             </NavLink>
+                        <h2>Frontend-разработчик</h2>
+                        <p>Идея реактивного программирования появилась  сравнительно недавно, лет 10 назад. Что вызвало популярность этого относительно нового подхода и почему сейчас он в тренде, рассказал на конференции </p>
+                        <NavLink to="/regis">
+                            <button>Купить курс за 46 $</button>
+                        </NavLink>
                     </div>
                     <div className="FrontEnd2">
                         <div className="FrontEnd2__text">

@@ -1,32 +1,59 @@
 #header {
-  background: #000;
-  padding: 28px 0;
+  background: rgb(10, 17, 40);
   position: sticky;
   top: 0;
+  z-index: 99;
+  backdrop-filter: blur(22px);
   .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 28px 0;
     &__logo {
-
-    }
-    .menu {
       display: flex;
-      gap: 24px;
-      a {
-        color: #fff;
+      align-items: center;
+      img {
+        margin-left: 70px;
+        width: 72px;
+        height: 45px;
       }
     }
-    &__btn {
+    &__nav {
       display: flex;
-      justify-content: center;
+      margin-left: 50px;
+    }
+    &__menu-list {
+      display: flex;
+      gap: 40px;
+    }
+    &__menu-link {
+      font-weight: 500;
+      font-size: 16px;
+      text-align: center;
+      color: #ffffff;
+    }
+    .active {
+      color: #0d508f;
+    }
+    &__podpiska {
+      display: flex;
       align-items: center;
-      button {
-        width: 207px;
-        height: 46px;
-        flex-shrink: 0;
-        border-radius: 5px;
+      gap: 25px;
+      a {
+        font-weight: 600;
+        font-size: 16px;
+        text-align: center;
+        color: #ffffff;
+      }
+      &-voyti {
+        color: #ffffff;
+      }
+      &-podpis {
         background: #034078;
+        border-radius: 5px;
+        padding: 14px 0;
+        min-width: 207px;
+        width: 100%;
       }
     }
   }

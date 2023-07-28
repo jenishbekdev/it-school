@@ -4,6 +4,7 @@ import Master from "./Master/Master";
 import Card from "./Card";
 import SliderPage from "./SliderPage";
 import Curs from "./Curs";
+import Todo from "./Todo/Todo";
 
 
 
@@ -15,6 +16,7 @@ const ParentSchool = () => {
             <Master/>
             <Card/>
             <SliderPage/>
+            <Todo/>
 
         </>
     );

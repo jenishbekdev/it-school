@@ -6,13 +6,15 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    margin-left: 70px;
   }
   .Process {
     margin-top: 50px;
     text-align: center;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-left: 40px;
     &__divs {
       width: 236.308px;
       height: 236.308px;

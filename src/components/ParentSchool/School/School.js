@@ -1,12 +1,13 @@
 import React from 'react';
 import './index.scss'
 import logo from '../../../img/logo.png'
+import {NavLink} from "react-router-dom";
 
 const School = () => {
     return (
         <div id="school">
             <div className="container">
-                <h3> <span>Главная /</span> О школе</h3>
+                <h3> <NavLink to="/">Главная /</NavLink> О школе</h3>
                 <div className="school">
                     <div className="school__title">
                             <h1> О нашей школе:</h1>

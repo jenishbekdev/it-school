@@ -3,12 +3,9 @@ import './index.scss'
 import {BsChevronDown, BsChevronUp} from "react-icons/bs";
 
 const Accordion = () => {
-
     const [question1, setQuestion1] = useState(false)
     const [question2, setQuestion2] = useState(false)
     const [question3, setQuestion3] = useState(false)
-
-
     return (
         <div id="accordion">
             <div className="container">
@@ -29,7 +26,7 @@ const Accordion = () => {
                                     Как мне начать обучение ?
                                 </h3>
                                 <button className="accordion--we__left--title__accord--btn">
-                                    { question1 ? <span className="accordion--we__left--title__accord--btn__icon">
+                                    {question1 ? <span className="accordion--we__left--title__accord--btn__icon">
                                 <BsChevronUp/>
                             </span> : <span className="accordion--we__left--title__accord--btn__down">
                                 <BsChevronDown/>
@@ -66,8 +63,8 @@ const Accordion = () => {
                             </div>
                             <div className="accordion--we__left--title__accord--btn__answer">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Accusantium  aspernatur eaque error laboriosam molestiae nam omnis
-                                    quaerat  repellendus vero, vitae!</p>
+                                    Accusantium aspernatur eaque error laboriosam molestiae nam omnis
+                                    quaerat repellendus vero, vitae!</p>
                             </div>
                         </div>
                         <div onClick={() => {
@@ -92,8 +89,8 @@ const Accordion = () => {
                             </div>
                             <div className="accordion--we__left--title__accord--btn__answer">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Accusantium  aspernatur eaque error laboriosam molestiae nam omnis
-                                    quaerat  repellendus vero, vitae!</p>
+                                    Accusantium aspernatur eaque error laboriosam molestiae nam omnis
+                                    quaerat repellendus vero, vitae!</p>
                             </div>
                         </div>
 
