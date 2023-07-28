@@ -1,9 +1,13 @@
 #youtube {
     .container {
+        h3{
+            margin-left: 60px;
+        }
         .youtube {
             display: flex;
             justify-content: space-between;
             align-items: start;
+            margin-left: 70px;
 
             .youtube-front {
                 h1 {
@@ -24,10 +28,17 @@
                     font-size: 20px;
                     color: white;
                     line-height: 24px;
+                    padding: 30px 0;
+                }
+
+                h5 {
+                    color: white;
+                    margin: 0;
                 }
 
                 input {
-                    padding: 25px 150px;
+                    padding: 0 150px;
+                    margin: 0;
                 }
 
                 .mud {
@@ -38,7 +49,6 @@
                         color: white;
                         font-size: 16px;
                         line-height: 24px;
-                        font-family: Poppins;
                     }
 
                     h2 {

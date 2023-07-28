@@ -40,7 +40,7 @@ const Card = () => {
                         <h4>Ежемесячно</h4>
                         <div className="card__block--btn">
                             <button className="card__block--btn__btn1">Оформить подписку</button>
-                            <button className="card__block--btn__btn2">Подробнее</button>
+                            <button  className="card__block--btn__btn2" onClick={() => window.scroll(0,0)}>Подробнее</button>
                         </div>
                     </div>
                 </div>

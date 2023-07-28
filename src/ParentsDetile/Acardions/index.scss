@@ -1,9 +1,7 @@
 #accordion {
   .accordion {
     display: flex;
-    justify-content: space-between;
-    padding: 100px 0 0 0;
-
+    justify-content: space-around;
 
     &--right {
       h1 {
@@ -20,11 +18,11 @@
       display: flex;
 
       &__left {
-        width: 800.011px;
+        width: 650px;
         cursor: pointer;
         height: 60px;
         overflow: hidden;
-        border-bottom: 2px solid white;
+        border-bottom: 1px solid white;
         transition: .4s;
 
         &--title {
@@ -60,7 +58,6 @@
                 font-size: 20px;
                 line-height: 20px;
                 color: #FFFFFF;
-
                 p {
                   font-weight: 300;
                   width: 800px;
@@ -72,4 +69,6 @@
       }
     }
   }
+
+  padding-bottom: 120px;
 }

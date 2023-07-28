@@ -1,33 +1,39 @@
 #FrontEnd {
-  padding-top: 6%;
+  padding-top: 50px;
+h1{
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 55px;
+  padding: 30px 0;
+  a{
+    color: rgba(255, 255, 255, 0.34);
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
 
   .FrontEnd {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-left: 20px;
 
-    &__h1 {
-      color: #c2c1c1;
-      font-size: 16px;
-      font-weight: 12;
-
-      span {
-        color: #FFFFFF;
-      }
-    }
 
     .FrontEnd1 {
-      h1 {
+      h2 {
         margin-top: 20%;
         color: #FFFFFF;
+        font-weight: 700;
+        font-size: 36px;
       }
 
       p {
-        width: 530px;
+        width: 630px;
         margin-top: 50px;
         font-size: 20px;
-        font-weight: 280;
-        line-height: 17px;
+        font-weight: 300;
+        line-height: 27px;
         text-align: left;
         color: rgb(255, 255, 255);
       }
@@ -51,13 +57,11 @@
       padding-top: 100px;
 
       &__text {
-
         span {
           padding: 20px 0;
           font-size: 15px;
           font-weight: 300;
           line-height: 14px;
-          text-align: center;
           color: rgba(255, 255, 255, 0.85);
         }
 
@@ -67,7 +71,6 @@
           font-weight: 600;
           line-height: 24px;
           letter-spacing: 0;
-          text-align: left;
           color: #FFFFFF;
         }
       }
@@ -80,7 +83,6 @@
           font-size: 15px;
           font-weight: 300;
           line-height: 14px;
-          text-align: center;
           color: rgba(255, 255, 255, 0.85);
         }
 
