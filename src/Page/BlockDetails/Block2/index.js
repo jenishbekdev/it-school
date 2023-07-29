@@ -1,5 +1,6 @@
 import React from "react";
 import img13 from "../../../img/image 13.svg";
+import { NavLink } from "react-router-dom";
 
 function Block2() {
   return (
@@ -41,7 +42,9 @@ function Block2() {
               Вы уже авторизованы? <p>Авторизуйтесь</p>
             </h4>
           </div>
-          <button>Получить доступ за 225,00$</button>
+          <NavLink to={"/GetAccess"}>
+            <button>Получить доступ за 225,00$</button>
+          </NavLink>
         </div>
       </div>
     </div>

@@ -14,6 +14,9 @@ import Curs from "./components/ParentSchool/Curs";
 import Youtube from "./components/Registr/Youtube";
 import BlockDetails from "./Page/BlockDetails";
 import BtnDetails from "./Page/BtnDetails";
+import GetAccess from "./Page/GetAccess";
+import Linck from "./NavLinck/Login";
+import Login from "./NavLinck/Login";
 
 function App() {
   return (
@@ -22,6 +25,8 @@ function App() {
 
       <div className="content">
         <Routes>
+          <Route path="/GetAccess" element={<GetAccess />} />
+          <Route path="/Login" element={<Login />} />
           <Route path="/BtnDetails" element={<BtnDetails />} />
           <Route path="/BlockDetails" element={<BlockDetails />} />
           <Route path="/buyCourse" element={<Registr />} />
