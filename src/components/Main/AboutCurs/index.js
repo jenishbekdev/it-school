@@ -62,7 +62,7 @@ const AboutCurs = () => {
                             <h4>Учитесь, применяйте полученные на курсе знания и будьте счастливы!</h4>
                             <div className="span--btn">
                                 <button className="span--btn__but1">Купить курс</button>
-                                <button className="span--btn__but2">Смотреть программу</button>
+                                <a href="#ProgramCurs" className="span--btn__but2">Смотреть программу</a>
                             </div>
                         </div>
                     </div>

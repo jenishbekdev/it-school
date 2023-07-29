@@ -4,7 +4,7 @@
     font-size: 16px;
     font-weight: 400;
     color: #FFFFFF;
-    margin-left: 70px;
+    margin-left: 150px;
   }
 
   h1 {
@@ -12,7 +12,7 @@
     padding: 20px 0;
     font-weight: 700;
     color: #FFFFFF;
-    margin-left: 500px;
+    margin-left: 400px;
   }
 
   .choose {
@@ -26,7 +26,7 @@
       Height: 481px;
       background: white;
       border-radius: 10px;
-
+      margin-left: 80px;
       h2 {
         padding: 20px 0;
         margin-left: 50px;
@@ -106,5 +106,13 @@
         }
       }
     }
+  }
+  h1{
+    color: #FFFFFF;
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
+    margin-right: 250px;
+    padding: 50px 0;
   }
 }

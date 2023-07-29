@@ -7,25 +7,25 @@
       font-size: 16px;
       font-weight: 400;
       line-height: 20px;
-      text-align: left;
       color: #A5A5A5;
+      margin-left: 80px;
+      padding-bottom: 20px;
     }
 
     &__text {
       h1 {
+        padding-top: 20px;
         color: #FFFFFF;
-        padding-top: 40px;
         font-size: 36px;
         font-weight: 700;
         line-height: 44px;
-        text-align: left;
+        margin-left: 80px;
       }
 
       .main {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        margin-right: 30%;
+        justify-content: space-around;
 
         p {
           margin-top: 50px;

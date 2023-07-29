@@ -1,11 +1,12 @@
 import React from 'react';
 import './index.scss'
+import {NavLink} from "react-router-dom";
 
 
 const MasterClass = () => {
     return (
         <div id="klass">
-            <h2> <span>Главная /</span> Мастер классы</h2>
+            <h2> <NavLink to="/">Главная /</NavLink> Мастер классы</h2>
             <h1>Мастер классы</h1>
             <div className="container">
                 <div className="klass">

@@ -9,14 +9,14 @@ import MasterClass from "./components/ParentSchool/MasterClass/MasterClass";
 import Main from "./components/Main/Main";
 import MasterMain from "./components/MasterClass/MasterMain";
 import ParentsDetaile from "./ParentsDetile/ParentsDetaile";
-import Registr from "../src/components/Registr/index";
 import Curs from "./components/ParentSchool/Curs";
-import Youtube from "./components/Registr/Youtube";
 import BlockDetails from "./Page/BlockDetails";
 import BtnDetails from "./Page/BtnDetails";
 import GetAccess from "./Page/GetAccess";
 import Linck from "./NavLinck/Login";
 import Login from "./NavLinck/Login";
+import Youtube from "./components/Registr/Youtube";
+import Registr from "./components/Registr/Registr";
 
 function App() {
   return (

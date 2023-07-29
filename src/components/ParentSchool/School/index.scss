@@ -1,13 +1,12 @@
 #school {
   background: #0A122BFF;
-  padding-top: 100px;
+  padding-top: 60px;
 
   h3 {
     color: white;
     margin-left: 80px;
     font-weight: 10;
-
-    span {
+    a {
       color: #a8a2a2;
     }
   }
@@ -21,9 +20,18 @@
       color: white;
 
       h1 {
-        padding: 10px 0;
-
+        font-size: 36px;
+        padding: 18px 0;
+        margin-top: 20px;
       }
+      p{
+        font-size: 20px;
+        font-weight: 300;
+      }
+    }
+    img{
+      width: 489px;
+      padding-top: 25px;
     }
   }
 }

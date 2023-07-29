@@ -2,20 +2,27 @@
   background: #0A122BFF;
   padding-top: 100px;
 
-  h2 {
-    margin-left: 550px;
+  a {
     color: white;
-    padding: 20px 20px;
+    cursor: pointer;
+  }
+
+  h2 {
+    margin-left: 600px;
+    padding: 50px 0;
+    color: white;
   }
 
   .curs {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-left: 50px;
 
     &__card {
+      margin: 0 15px;
       width: 370px;
-      height: 300px;
+      height: 283px;
       background: white;
       border-radius: 20px;
 
@@ -34,36 +41,46 @@
 
       }
 
-      h3 {
-        color: black;
-        font-size: 16px;
-        margin-left: 35px;
-        padding-top: 20px;
-        text-underline: black;
-        text-decoration: underline;
-      }
+
 
       &--link {
-          display: flex;
-          align-items: end;
-          justify-content: start;
+        display: flex;
+        align-items: end;
+        justify-content: start;
+        h3 {
+          color: black;
+          font-size: 16px;
+          margin-left: 35px;
+          padding-top: 20px;
+          text-underline: black;
+          //text-decoration: underline;
+          border-bottom: 1px solid black;
+        }
+        &__icon{
+          margin-left: 10px;
+          color: black;
+        }
+        &__line{
+          width: 99px;
+          color: #000000;
+          height: 1px;
+        }
       }
 
     }
 
   }
 
+
   button {
-    Width :209px;
+    Width: 209px;
     Height: 51px;
     background: #0b4983;
-    border: 4px  solid transparent;
-    margin-left: 500px;
+    border: 4px solid transparent;
+    margin-left: 530px;
     margin-top: 60px;
     border-radius: 10px;
-  a{
-    color: white;
-
-  }
+    cursor: pointer;
+    color: #FFFFFF;
   }
 }
