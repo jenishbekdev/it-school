@@ -1,0 +1,48 @@
+#blocks {
+  h2 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 36px;
+    margin-top: 140px;
+  }
+  .blocks {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 70px;
+    margin-bottom: 80px;
+    &__block1 {
+      width: 390px;
+      height: 250px;
+      background: #fff;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 25px;
+      h4 {
+        color: #898989;
+        font-size: 18.353px;
+        font-weight: 500;
+        margin-left: 20px;
+      }
+      p {
+        color: #000;
+        font-size: 24px;
+        font-weight: 500;
+        margin-left: 20px;
+      }
+      &__date {
+        display: flex;
+        justify-content: start;
+        margin-left: 20px;
+        gap: 130px;
+        h3 {
+          color: #044176;
+          font-size: 19.496px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

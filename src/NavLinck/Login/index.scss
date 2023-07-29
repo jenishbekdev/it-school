@@ -1,0 +1,50 @@
+#Login {
+  .Login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    img {
+      width: 150px;
+    }
+    &__input1 {
+      width: 600px;
+      height: 50px;
+      background: none;
+      padding: 0px 20px;
+      color: #fff;
+      font-size: 18px;
+    }
+    &__input2 {
+      width: 600px;
+      height: 50px;
+      background: none;
+      padding: 0px 20px;
+      color: #fff;
+      font-size: 18px;
+    }
+    &__btns {
+      .btn1 {
+        padding: 17px 90px;
+        border-radius: 10px;
+        background: #034078;
+        color: #fff;
+        font-size: 18px;
+        border: none;
+        cursor: pointer;
+      }
+      .btn2 {
+        padding: 17px 120px;
+        border-radius: 10px;
+        background: #034078;
+        color: #fff;
+        font-size: 18px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+  }
+}
