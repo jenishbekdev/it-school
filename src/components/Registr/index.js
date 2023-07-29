@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./index.scss";
-import { click } from "@testing-library/user-event/dist/click";
 
 const Registr = () => {
   const [top, setTop] = useState(false);
   const [redirectToFront, setRedirectToFront] = useState(false);
   const [chek, setChek] = useState(false);
+  const [showCheckboxMessage, setShowCheckboxMessage] = useState(false);
+
   const oplata = (e) => {
     e.preventDefault();
 
@@ -29,7 +30,7 @@ const Registr = () => {
       i7.value.trim() === "" ||
       i8.value.trim() === ""
     ) {
-      // Если хотя бы одно поле пустое, применяем красную рамку к незаполненным полям
+      // If at least one field is empty, apply a red border to the empty fields
       i1.style.border =
         i1.value.trim() === "" ? "1px solid red" : "1px solid white";
       i2.style.border =
@@ -50,8 +51,11 @@ const Registr = () => {
       i10.parentNode.style.border = i10.checked
         ? "1px solid white"
         : "1px solid red";
+    } else if (!chek) {
+      // If all fields are filled, but the checkbox is not checked, show the checkbox message
+      setShowCheckboxMessage(true);
     } else {
-      // Если все поля заполнены, применяем зеленую рамку к кнопке "Оплатить" и переходим на другую страницу
+      // If all fields are filled, and the checkbox is checked, apply a green border to the "Оплатить" button and redirect to another page
       setTop(true);
       setTimeout(() => {
         setRedirectToFront(true);
@@ -80,16 +84,23 @@ const Registr = () => {
     i5.style.border = i5.value === "" ? "1px solid red" : "1px solid white";
     i6.style.border = i6.value === "" ? "1px solid red" : "1px solid white";
     i7.style.border = i7.value === "" ? "1px solid red" : "1px solid white";
-    i8.style.border = chek ? "chekbox" : "1px solid red";
+    i8.style.border = chek ? "1px solid white" : "1px solid red"; // Update the border for checkbox
 
-    // i8.style.border = i8.value === "" ? "1px solid red" : "1px solid white";
+    const radioVisa = document.querySelector(".i9");
+    const radioMasterCard = document.querySelector(".i10");
 
-    i9.parentNode.style.border = i9.checked
-      ? "1px solid white"
-      : "1px solid red";
-    i10.parentNode.style.border = i10.checked
-      ? "1px solid white"
-      : "1px solid red";
+    radioVisa.parentNode.style.border = "1px solid white";
+    radioMasterCard.parentNode.style.border = "1px solid white";
+
+    if (radioVisa.checked || radioMasterCard.checked) {
+      radioVisa.parentNode.style.border = "1px solid white";
+      radioMasterCard.parentNode.style.border = "1px solid white";
+    } else {
+      radioVisa.parentNode.style.border = "1px solid red";
+      radioMasterCard.parentNode.style.border = "1px solid red";
+    }
+
+    setChek(radioVisa.checked || radioMasterCard.checked);
   }
   return (
     <div id="god">
@@ -175,7 +186,7 @@ const Registr = () => {
                     name="email"
                     type="email"
                   />
-                  
+
                   <div className="god--about__input--radio">
                     <div className="god--about__input--radio__one">
                       <input
@@ -203,8 +214,8 @@ const Registr = () => {
                     required
                     placeholder="Номер карты *"
                     name="karta"
-                    type="number"
-                    maxLength={6}
+                    type="text"
+                    maxLength={14}
                   />
                   <div className="god--about__input--cvc">
                     <input
@@ -212,7 +223,7 @@ const Registr = () => {
                       className="i6"
                       required
                       placeholder="ММ/ГГ *"
-                      type="tel"
+                      type="text"
                       maxLength={4}
                     />
                     <input
@@ -224,23 +235,26 @@ const Registr = () => {
                       maxLength={3}
                     />
                   </div>
-                  <div className="god--about__input--chekbox">
-                    <input
-                      onInput={oplata2}
-                      className="i8"
-                      required
-                      type="checkbox"
-                    />
-                    <h5>Я ознакомился и согласен с Условиями оказания услуг</h5>
-                  </div>
+
                   <button
-                    // className="oplata"
+                    className="oplata"
                     onClick={oplata}
                     style={{ cursor: "pointer", padding: "12px 15px" }}
                     type="submit"
                   >
                     Оплатить 220.00$
                   </button>
+                  <div className="god--about__input--chekbox">
+                    <input
+                      onInput={oplata2}
+                      className="i8"
+                      required
+                      type="checkbox"
+                      checked={chek}
+                      onChange={() => setChek(chek)}
+                    />
+                    <h5>Я ознакомился и согласен с Условиями оказания услуг</h5>
+                  </div>
                 </div>
                 <div
                   style={{

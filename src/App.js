@@ -12,11 +12,13 @@ import ParentsDetaile from "./ParentsDetile/ParentsDetaile";
 import Registr from "../src/components/Registr/index"
 import Curs from './components/ParentSchool/Curs';
 import Youtube from './components/Registr/Youtube';
+import State from './components/Registr/State';
 
 function App() {
     return (
         <div className="App">
             <Header/>
+            {/* <State/> */}
     
 
             <div className='content'>

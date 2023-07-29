@@ -1,0 +1,65 @@
+#state {
+    .container {
+        .state {
+            h4 {
+                font-size: 16px;
+                line-height: 19px;
+                color: #A5A5A5;
+                padding: 90px 0 50px 0;
+
+                span {
+                    color: #ffff;
+                }
+            }
+
+            h1 {
+                font-family: Montserrat;
+                font-weight: 700;
+                font-size: 37px;
+                line-height: 40px;
+                color: #ffff;
+                padding: 10px 0 50px 0;
+            }
+
+            &--uvo {
+                width: 850px;
+                height: 150px;
+                // background: hsla(228, 15%, 81%, 0.4);
+                background: #1B295966;
+                border-radius: 10px;
+                display: flex;
+                align-items: start;
+
+                h1 {
+                    color: #ffff;
+                    width: 35px;
+                    height: 35px;
+                    padding: 40px 0 0 40px;
+                }
+
+                &__title {
+                    padding: 40px 30px;
+                    margin: 0 30px;
+
+                    h3 {
+                        font-family: Montserrat;
+                        font-size: 16px;
+                        line-height: 20px;
+                        font-weight: 900;
+                        color: #ffff;
+                        padding: 0 0 10px 0;
+                    }
+
+                    p {
+                        font-family: Montserrat;
+                        font-size: 16px;
+                        line-height: 20px;
+                        font-weight: 500;
+                        color: #ffff;
+                    }
+                }
+
+            }
+        }
+    }
+}

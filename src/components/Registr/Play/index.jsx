@@ -1,203 +1,210 @@
 import React, { useState } from "react";
 import "./index.scss";
-import { TfiArrowCircleDown, TfiArrowCircleUp } from "react-icons/tfi";
-
-const accordionData = [
-  {
-    title: "Модуль 1",
-    image: "https://primemusic.zone/uploads/posts/2023-01/63c09cad3fb50.jpg",
-    image: "https://primemusic.zone/uploads/posts/2023-01/63c09cad3fb50.jpg",
-    image: "https://primemusic.zone/uploads/posts/2023-01/63c09cad3fb50.jpg",
-    image1:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7oSCNuV_GiJikmv00PB3Fl6grvQRZYG7L_g&usqp=CAU", 
-    image2:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL-lF-cbqbe0ogtj9ee5f9Bz7SglY90fIwJg&usqp=CAU", 
-    video: "https://www.youtube.com/watch?v=iT_qKUG_m28",
-    video2: "https://www.youtube.com/embed/wpbHmjQJl1Y",
-    video3: "https://www.youtube.com/embed/QBUXsvjZIWI",
-    text: "Бат эле унутамын",
-    text2: "Суротуно",
-    text3: "Керексин",
-    id: 1,
-  },
-  {
-    title: "Модуль 2",
-    image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL-lF-cbqbe0ogtj9ee5f9Bz7SglY90fIwJg&usqp=CAU", 
-    image1:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL-lF-cbqbe0ogtj9ee5f9Bz7SglY90fIwJg&usqp=CAU",
-    image2:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL-lF-cbqbe0ogtj9ee5f9Bz7SglY90fIwJg&usqp=CAU", 
-    video: "https://www.youtube.com/embed/j1DhaufCHmI",
-    video2: "https://www.youtube.com/embed/BiBwujgYNvc",
-    video3: "https://www.youtube.com/embed/XflFSWaNJxU",
-    text: "Бат эле унутамын",
-    text2: "Суротуно",
-    text3: "Керексин",
-    урок:'hbnjkm',
-    id: 2,
-  },
-  {
-    title: "Модуль 3",
-    image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL-lF-cbqbe0ogtj9ee5f9Bz7SglY90fIwJg&usqp=CAU", 
-    image1:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL-lF-cbqbe0ogtj9ee5f9Bz7SglY90fIwJg&usqp=CAU", 
-    image2:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL-lF-cbqbe0ogtj9ee5f9Bz7SglY90fIwJg&usqp=CAU", 
-    video: "https://www.youtube.com/embed/j1DhaufCHmI",
-    video2: "https://www.youtube.com/embed/BiBwujgYNvc",
-    video3: "https://www.youtube.com/embed/XflFSWaNJxU",
-    text: "Бат эле унутамын",
-    text2: "Суротуно",
-    text3: "Керексин",
-    id: 2,
-  },
-  // Добавьте остальные данные для модулей...
-];
+import { BsChevronDown, BsChevronUp } from "react-icons/bs";
 
 const Play = () => {
-  const [youtube, setYoutube] = useState(accordionData[0].video);
-  const [activeIndex, setActiveIndex] = useState(0);
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [question1, setQuestion1] = useState(false);
+  const [question2, setQuestion2] = useState(false);
+  const [question3, setQuestion3] = useState(false);
 
-  const programClick = (index) => {
-    const a = document.querySelector(".accordion-item");
-    if (index <= currentIndex) {
-      a.style.opacity = "1";
-      setActiveIndex(index === activeIndex ? null : index);
-    }
-  };
-
-  const programVideoClick = (video, index) => {
-    if (index === activeIndex) {
-      setYoutube(video);
-      setActiveIndex(null);
-      setCurrentIndex(index + 1);
+  const handleAccordionClick = (accordionNumber) => {
+    if (accordionNumber === 1) {
+      setQuestion1(!question1);
+      setQuestion2(false);
+      setQuestion3(false);
+    } else if (accordionNumber === 2) {
+      setQuestion1(false);
+      setQuestion2(!question2);
+      setQuestion3(false);
+    } else if (accordionNumber === 3) {
+      setQuestion1(false);
+      setQuestion2(false);
+      setQuestion3(!question3);
     }
   };
 
   return (
-    <div id="program">
+    <div id="play">
       <div className="container">
-        <div className="program">
-          <div className="program--fr">
-            <h1>ПРОГРАММА КУРСА </h1>
-          </div>
-          <div className="program--vid">
-            <div className="program--vid__if">
+        <div className="play">
+          <div className="play-one">
+            <div className="play--youtube">
+              <h1
+                style={{
+                  color: "white",
+                  fontSize: "36px",
+                  padding: "25px 0",
+                }}
+              >
+                ПРОГРАММА КУРСА{" "}
+              </h1>
               <iframe
-                width="560"
-                height="315"
-                src={youtube}
+                width="600"
+                height="375"
+                src="https://www.youtube.com/embed/F7D1kD7nbMc?modestbranding=1&controls=0"
                 title="YouTube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
               ></iframe>
             </div>
+          </div>
+          <div className="accordions--we">
             <div
-              className="program--vid__accordion"
-              style={{ cursor: "pointer" }}
+              onClick={() => handleAccordionClick(1)}
+              style={{ height: question1 ? "210px" : "" }}
+              className="accordion--we__left"
             >
-              {accordionData.map((item, index) => (
-                <div
-                  key={index}
-                  className={`accordion-item ${
-                    activeIndex === index ? "active" : ""
-                  }`}
-                  onClick={() => programClick(index)}
-                >
-                  <div className="program--vid__accordion--title">
-                    <div
-                      style={{
-                        color: "#fffff",
-                        width: "156px",
-                        height: "68px",
-                        background: "#034781",
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                        borderRadius:'10px'
-                      }}
-                    >
-                      {item.title}
-                    </div>
-                    <div>
-                      <h2
-                        style={{
-                          fontSize: "20px",
-                          color: "white",
-                          lineHeight: "20px",
-                          padding: "10px 20px",
-                          margin: "0",
-                        }}
-                      >
-                        Reactivity
-                      </h2>
-                      <h3
-                        style={{
-                          // padding: "10px 20px",
-                          fontSize: "12px",
-                          color: "white",
-                          width: "200px",
-                          height: "28px",
-                          background: "#1B295966",
-                          display: "flex",
-                          justifyContent: "center",
-                          alignItems: "center",
-                          margin:'10px 20px'
-                        }}
-                      >
-                        Пройдено материалов: 4/15
-                      </h3>
-                    </div>
-                    <div>
-                      <span>
-                        {activeIndex === index ? (
-                          <TfiArrowCircleUp />
-                        ) : (
-                          <TfiArrowCircleDown />
-                        )}
-                      </span>
-                    </div>
-                  </div>
-                  {index === activeIndex && (
-                    <div className="program--vid__accordion--title__content">
-                      <div
-                        onClick={() => programVideoClick(item.video, index)}
-                        className="program--vid__accordion--title__content--videos"
-                      >
-                        <img src={item.image} alt="" />
-                        <div>
-                          <p>{item.text}</p>
-                        </div>
-                      </div>
-                      <div
-                        onClick={() => programVideoClick(item.video2, index)}
-                        className="program--vid__accordion--title__content--videos"
-                      >
-                        <img src={item.image1} alt="" />
-                        <div>
-                          <p>{item.text2}</p>
-                          <span>{item.study}</span>
-                        </div>
-                      </div>
-                      <div
-                        onClick={() => programVideoClick(item.video3, index)}
-                        className="program--vid__accordion--title__content--videos"
-                      >
-                        <img src={item.image2} alt="" />
-                        <div>
-                          <p>{item.text3}</p>
-                          <span>{item.study}</span>
-                        </div>
-                      </div>
-                    </div>
-                  )}
+              <div className="accordion--we__left--title">
+                <h3 className="accordion--we__left--title__accord">
+                  <button>Модуль 1</button>
+                </h3>
+                <div className="accordion--we__left--title__accord--cod">
+                  <h1>Reactivity</h1>
+                  <p>Пройдено материалов: 4/15</p>
                 </div>
-              ))}
+                <button
+                  className="accordion--we__left--title__accord--btn"
+                  onClick={(e) => {
+                    e.preventDefault(); // Prevent the default button click behavior
+                    handleAccordionClick(1); // Call the accordion click handler
+                  }}
+                >
+                  {question1 ? (
+                    <span className="accordion--we__left--title__accord--btn__icon">
+                      <BsChevronUp />
+                    </span>
+                  ) : (
+                    <span className="accordion--we__left--title__accord--btn__down">
+                      <BsChevronDown />
+                    </span>
+                  )}
+                </button>
+              </div>
+              <div className="accordion--we__left--title__accord--btn__answer">
+                <div className="accordion--we__left--title__accord--btn__answer--bloct">
+                  <div className="accordion--we__left--title__accord--btn__answer--bloct__bloct-1">
+                    <p>
+                      {" "}
+                      <iframe
+                        width="100"
+                        height="75"
+                        style={{ borderRadius: "5px" }}
+                        src="https://www.youtube.com/embed/F7D1kD7nbMc?modestbranding=1&controls=0"
+                        title="YouTube video player"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowFullScreen
+                      ></iframe>
+                    </p>
+                  </div>
+                  <div className="accordion--we__left--title__accord--btn__answer--bloct__bloct-2">
+                    <h1>3 Observable example</h1>
+                    <h2>video</h2>
+                  </div>
+                </div>
+                <div className="accordion--we__left--title__accord--btn__answer--bloct">
+                  <div className="accordion--we__left--title__accord--btn__answer--bloct__bloct-1">
+                    <p>
+                      {" "}
+                      <iframe
+                        width="100"
+                        height="75"
+                        style={{ borderRadius: "5px" }}
+                        src="https://www.youtube.com/embed/F7D1kD7nbMc?modestbranding=1&controls=0"
+                        title="YouTube video player"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowFullScreen
+                      ></iframe>
+                    </p>
+                  </div>
+                  <div className="accordion--we__left--title__accord--btn__answer--bloct__bloct-2">
+                    <h1>3 Observable example</h1>
+                    <h2>video</h2>
+                  </div>
+                </div>
+                <div className="accordion--we__left--title__accord--btn__answer--bloct">
+                  <div className="accordion--we__left--title__accord--btn__answer--bloct__bloct-1">
+                    <p>
+                      {" "}
+                      <iframe
+                        width="100"
+                        height="75"
+                        style={{ borderRadius: "5px" }}
+                        src="https://www.youtube.com/embed/F7D1kD7nbMc?modestbranding=1&controls=0"
+                        title="YouTube video player"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowFullScreen
+                      ></iframe>
+                    </p>
+                  </div>
+                  <div className="accordion--we__left--title__accord--btn__answer--bloct__bloct-2">
+                    <h1>3 Observable example</h1>
+                    <h2>video</h2>
+                  </div>
+                </div>
+              </div>
             </div>
+
+            <div
+              onClick={() => handleAccordionClick(2)}
+              style={{ height: question2 ? "210px" : "" }}
+              className="accordion--we__left"
+            >
+              <div className="accordion--we__left--title">
+                <h3 className="accordion--we__left--title__accord">
+                  <button>Модуль 1</button>
+                </h3>
+                <div className="accordion--we__left--title__accord--cod">
+                  <h1>Reactivity</h1>
+                  <p>Пройдено материалов: 4/15</p>
+                </div>
+                <button
+                  className="accordion--we__left--title__accord--btn"
+                  onClick={(e) => {
+                    e.preventDefault(); 
+                    handleAccordionClick(2);
+                  }}
+                >
+                  {question2 ? (
+                    <span className="accordion--we__left--title__accord--btn__icon">
+                      <BsChevronUp />
+                    </span>
+                  ) : (
+                    <span className="accordion--we__left--title__accord--btn__down">
+                      <BsChevronDown />
+                    </span>
+                  )}
+                </button>
+              </div>
+              <div className="accordion--we__left--title__accord--btn__answer">
+                <div className="accordion--we__left--title__accord--btn__answer--bloct">
+                  <div className="accordion--we__left--title__accord--btn__answer--bloct__bloct-1">
+                    <p>
+                      {" "}
+                      <iframe
+                        width="100"
+                        height="75"
+                        style={{ borderRadius: "5px" }}
+                        src="https://www.youtube.com/embed/F7D1kD7nbMc?modestbranding=1&controls=0"
+                        title="YouTube video player"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowFullScreen
+                      ></iframe>
+                    </p>
+                  </div>
+                  <div className="accordion--we__left--title__accord--btn__answer--bloct__bloct-2">
+                    <h1>3 Observable example</h1>
+                    <h2>video</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Add similar code for the third accordion if needed */}
           </div>
         </div>
       </div>
