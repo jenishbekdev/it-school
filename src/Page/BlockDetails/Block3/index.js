@@ -17,7 +17,9 @@ function Block3() {
               зарегитрируйтесь.
             </h4>
           </div>
-          <button>Зарегистрироваться</button>
+          <Link to={"/Login"}>
+            <button>Зарегистрироваться</button>
+          </Link>
         </div>
         <h2>Другие статьи </h2>
         <div className="blocks">

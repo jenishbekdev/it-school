@@ -32,6 +32,12 @@ function Application() {
       })
       .then((response) => {
         console.log("Сообщение успешно отправлено:", response.data);
+        alert("Сообщение успешно отправлено:", "ok");
+        setFormData({
+          name: "",
+          phoneNumber: "+996",
+          email: "",
+        });
       })
       .catch((error) => {
         console.error("Произошла ошибка при отправке сообщения:", error);
@@ -46,7 +52,7 @@ function Application() {
             <h1>Оставить заявку</h1>
             <p>
               Заполните краткую форму с ключевыми вопросами, и мы подготовимся к
-              разговору с вами{" "}
+              разговору с вами
             </p>
           </div>
           <div className="application__right">

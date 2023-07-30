@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../img/логотип.svg";
+import { type } from "@testing-library/user-event/dist/type";
 
 function Login() {
+  const [item, setItem] = useState({
+    
+  });
+
   return (
     <div id="Login">
       <div className="container">

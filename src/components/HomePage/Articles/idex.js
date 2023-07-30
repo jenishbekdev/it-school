@@ -139,7 +139,7 @@ function Articles() {
                 </p>
               </div>
               <div className="articles__oform-btn">
-                <Link>
+                <Link to={"Login"}>
                   <button>Оформить подписку</button>
                 </Link>
                 <span>Подробнее о пакетах </span>
