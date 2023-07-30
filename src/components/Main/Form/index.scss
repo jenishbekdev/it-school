@@ -1,27 +1,29 @@
 #Form {
-  margin-top: 200px;
-  .Form{
+  margin-top: 20%;
+  .Form {
     display: flex;
     align-items: center;
     justify-content: space-around;
     .Forms {
       text-align: center;
       h1 {
-        padding-top: 40px;
-        padding-bottom: 40px;
-        color: #FFF;
+        font-family: Montserrat, sans-serif;
         font-size: 20px;
-        font-style: normal;
         font-weight: 700;
-        line-height: normal;
+        line-height: 24px;
+        color: #FFFFFF;
+        padding-top: 40px;
+        width: 299px;
       }
       p {
-        color: rgba(255, 255, 255, 0.9);
+        font-family: Montserrat,sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 24px;
         text-align: center;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+        color: #FFFFFF;
+        width: 324px;
+        padding-top: 35px;
       }
     }
   }

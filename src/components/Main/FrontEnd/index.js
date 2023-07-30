@@ -14,6 +14,11 @@ const FrontEnd = () => {
                         <NavLink to="/regis">
                             <button>Купить курс за 46 $</button>
                         </NavLink>
+                        <h1>Frontend-разработчик</h1>
+                        <p>Идея реактивного программирования появилась сравнительно недавно, лет 10 назад. Что вызвало
+                            популярность этого относительно нового подхода и почему сейчас он в тренде, рассказал на
+                            конференции </p>
+                        <button>Купить курс за 46 $</button>
                     </div>
                     <div className="FrontEnd2">
                         <div className="FrontEnd2__text">
@@ -27,8 +32,10 @@ const FrontEnd = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </  div>
     );
 };
 
 export default FrontEnd;
+
+

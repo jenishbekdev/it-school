@@ -2,15 +2,13 @@ import React, {useState} from 'react';
 import './index.scss'
 import {BsChevronDown, BsChevronUp} from "react-icons/bs";
 
-<<<<<<<< HEAD:src/components/MasterClass/FAQ/index.js
 const Faq = () => {
 
-========
-const Accordion = () => {
->>>>>>>> 0494439beb1a0d451e7a07743d97f09fb21f7f7e:src/components/Main/Accordion/index.js
     const [question1, setQuestion1] = useState(false)
     const [question2, setQuestion2] = useState(false)
     const [question3, setQuestion3] = useState(false)
+
+
     return (
         <div id="faq">
             <div className="container">
@@ -30,13 +28,8 @@ const Accordion = () => {
                                 <h3 className="faq--we__left--title__accord">
                                     Как мне начать обучение ?
                                 </h3>
-<<<<<<<< HEAD:src/components/MasterClass/FAQ/index.js
                                 <button className="faq--we__left--title__accord--btn">
                                     { question1 ? <span className="faq--we__left--title__accord--btn__icon">
-========
-                                <button className="accordion--we__left--title__accord--btn">
-                                    {question1 ? <span className="accordion--we__left--title__accord--btn__icon">
->>>>>>>> 0494439beb1a0d451e7a07743d97f09fb21f7f7e:src/components/Main/Accordion/index.js
                                 <BsChevronUp/>
                             </span> : <span className="faq--we__left--title__accord--btn__down">
                                 <BsChevronDown/>
@@ -44,18 +37,8 @@ const Accordion = () => {
                                     }
                                 </button>
                             </div>
-<<<<<<<< HEAD:src/components/MasterClass/FAQ/index.js
                             <div className="faq--we__left--title__accord--btn__answer">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Accusantium  aspernatur eaque error laboriosam molestiae nam omnis
-                                    quaerat  repellendus vero, vitae!</p>
-========
-                            <div className="accordion--we__left--title__accord--btn__answer">
-                                <p>Очень просто – зарегистрироваться. Это займет всего несколько <br/>
-                                    минут. Создайте свой аккаунт с помощью адреса электронной <br/>
-                                    почты и номера телефона. Мастер-класс станет доступен сразу <br/>
-                                    после оплаты или в день запуска.</p>
->>>>>>>> 0494439beb1a0d451e7a07743d97f09fb21f7f7e:src/components/Main/Accordion/index.js
+                                <p>Очень просто – зарегистрироваться. Это займет всего несколько минут. Создайте свой аккаунт с помощью адреса электронной почты и номера телефона. Мастер-класс станет доступен сразу после оплаты или в день запуска.</p>
                             </div>
                         </div>
                         <div onClick={() => {
@@ -79,9 +62,8 @@ const Accordion = () => {
                                 </button>
                             </div>
                             <div className="faq--we__left--title__accord--btn__answer">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Accusantium aspernatur eaque error laboriosam molestiae nam omnis
-                                    quaerat repellendus vero, vitae!</p>
+                                <p>Очень просто – зарегистрироваться. Это займет всего несколько минут. Создайте свой аккаунт с помощью адреса электронной почты и номера телефона. Мастер-класс станет доступен сразу после оплаты или в день запуска.</p>
+
                             </div>
                         </div>
                         <div onClick={() => {
@@ -105,9 +87,8 @@ const Accordion = () => {
                                 </button>
                             </div>
                             <div className="faq--we__left--title__accord--btn__answer">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Accusantium aspernatur eaque error laboriosam molestiae nam omnis
-                                    quaerat repellendus vero, vitae!</p>
+                                <p>Очень просто – зарегистрироваться. Это займет всего несколько минут. Создайте свой аккаунт с помощью адреса электронной почты и номера телефона. Мастер-класс станет доступен сразу после оплаты или в день запуска.</p>
+
                             </div>
                         </div>
                     </div>

@@ -14,14 +14,14 @@ const MasterCurs = () => {
                             этого относительно нового подхода и почему сейчас он в тренде, рассказал
                             на конференции
                         </p>
-                        <button>Купить мастер-класс за 46 $ </button>
+                        <button>Купить мастер-класс за 46 $</button>
                     </div>
-                    <div className="">
-                        <div className="MasterCurs__left">
-                            <span>Доступ:</span>
+                    <div className="MasterCurs--left">
+                        <div className="MasterCurs--left__title">
+                            <span>Доступ: </span>
                             <h3>6 недель</h3>
                         </div>
-                        <div className="MasterCurs2__left2">
+                        <div className="MasterCurs--left__title2">
                             <span>В мастер-класс входит: </span>
                             <h3>5 уроков</h3>
                         </div>

@@ -32,7 +32,7 @@ const Master = () => {
                         </p>
                     </div>
                 </div>
-                <button><NavLink to="/master-klass"onClick={() => window.scroll(0,0)}>Все мастер классы</NavLink></button>
+                <button><NavLink to="/master-klass">Все мастер классы</NavLink></button>
             </div>
         </div>
     );
