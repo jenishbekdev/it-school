@@ -1,36 +1,62 @@
 #header {
-  background: rgba(8, 16, 35, 0.4);
-  padding: 23px 0;
+  background: rgba(10, 17, 40, 0.504);
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  backdrop-filter: blur(22px);
   .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 28px 0;
     &__logo {
-
-    }
-    .menu {
       display: flex;
-      gap: 24px;
-      list-style: none;
-      a {
-        color: #fff;
+      align-items: center;
+      img {
+        width: 72px;
+        height: 45px;
+      }
+      img {
+        width: 72px;
+        height: 45px;
       }
     }
-    &__btn {
+    &__nav {
       display: flex;
-      justify-content: space-around;
+      margin-left: 50px;
+    }
+    &__menu-list {
+      display: flex;
+      gap: 40px;
+    }
+    &__menu-link {
+      font-weight: 500;
+      font-size: 16px;
+      text-align: center;
+      color: #ffffff;
+    }
+    .active {
+      color: #0d508f;
+    }
+    &__podpiska {
+      display: flex;
       align-items: center;
-      button {
-        font-family: Montserrat, sans-serif;
+      gap: 25px;
+      a {
+        font-weight: 500;
         font-size: 16px;
-        font-weight: 400;
-        line-height: 20px;
         text-align: center;
-        width: 207px;
-        height: 46px;
+        color: #ffffff;
+      }
+      &-voyti {
+        color: #ffffff;
+      }
+      &-podpis {
+        background: #034078;
         border-radius: 5px;
-        background: #0a569b;
-        color: white;
+        padding: 14px 0;
+        min-width: 207px;
+        // width: 100%;
       }
     }
   }

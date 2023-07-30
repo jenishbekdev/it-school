@@ -2,10 +2,9 @@
   margin-top: 100px;
 
   h3 {
-    font-family: Montserrat, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 21px;
     color: #FFFFFF;
   }
 
@@ -17,88 +16,80 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     &__right {
       margin-top: 60px;
-
       h1 {
-        font-family: Montserrat, sans-serif;
-        font-size: 36px;
-        font-weight: 700;
-        line-height: 50px;
-        width: 666px;
+        width: 568px;
+        height: 132px;
+        top: 253px;
+        left: 135px;
         color: #FFFFFF;
       }
 
       p {
-        font-family: Montserrat, sans-serif;
-        font-size: 20px;
-        font-weight: 350;
-        line-height: 26px;
-        padding-top: 40px;
-        width: 641px;
+        padding-top: 50px;
+        width: 490px;
         height: 96px;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 24px;
         color: #FFFFFF;
       }
 
       button {
         margin-top: 105px;
-        width: 303px;
+        width: 263px;
         height: 70px;
-        font-size: 15px;
-        background: #044076;
-        font-weight: 300;
+        background: rgba(34, 116, 210, 0.89);
+        font-size: 14px;
+        font-weight: 200;
         color: #FFFFFF;
         text-align: center;
-        border-radius: 10px;
-        border: 4px solid transparent;
+        border-radius: 20px;
+      }
+    }
+    &__left {
+      padding: 40px 0;
+      span {
+        padding: 20px 0;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 14px;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.85);
+      }
 
+      h3 {
+        padding: 10px 0;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0;
+        text-align: left;
+        color: #FFFFFF;
       }
     }
 
-    &--left {
-      margin-right: 80px;
-      &__title {
-        span {
-          font-family: Montserrat, sans-serif;
-          font-size: 20px;
-          font-weight: 300;
-          line-height: 24px;
-          color: #FFFFFF;
-        }
-
-        h3 {
-          padding-top: 10px;
-          font-family: Montserrat, sans-serif;
-          font-size: 20px;
-          font-weight: 600;
-          line-height: 24px;
-          color: #FFFFFF;
-        }
+    &__left2 {
+      padding: 20px 0;
+      span {
+        padding: 20px 0;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 14px;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.85);
       }
 
-      &__title2 {
-        padding: 140px 0;
-        margin-top: -60px;
-
-        span {
-          font-family: Montserrat, sans-serif;
-          font-size: 20px;
-          font-weight: 300;
-          line-height: 24px;
-          color: #FFFFFF;
-        }
-
-        h3 {
-          font-family: Montserrat, sans-serif;
-          font-size: 20px;
-          font-weight: 600;
-          line-height: 24px;
-          color: #FFFFFF;
-          padding-top: 15px;
-        }
+      h3 {
+        padding: 10px 0;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0;
+        text-align: left;
+        color: #FFFFFF;
       }
-
     }
   }
 }

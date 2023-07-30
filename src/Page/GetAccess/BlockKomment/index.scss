@@ -1,0 +1,60 @@
+#blockkomment {
+  .blockkomment {
+    h1 {
+      color: #fff;
+      font-family: Montserrat;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      margin-top: 140px;
+    }
+    &__komment {
+      margin-top: 70px;
+      width: 851px;
+      height: 246px;
+      border-radius: 7.359px;
+      background: #050c22;
+      textarea {
+        margin: 20px 20px;
+        width: 810.959px;
+        height: 136.141px;
+        border: none;
+        border-radius: 7.359px;
+        background: rgba(27, 41, 89, 0.4);
+        color: #fff;
+        font-size: 18px;
+        padding: 20px 20px;
+        outline: none;
+      }
+      textarea::placeholder {
+        color: #fff;
+        // padding: 20px 20px;
+      }
+      button {
+        display: inline-flex;
+        padding: 18.397px 55.192px;
+        align-items: flex-start;
+        gap: 7.359px;
+        background: rgba(27, 41, 89, 0.4);
+        border-radius: 7.359px;
+        border: none;
+        color: #fff;
+        margin-left: 20px;
+        cursor: pointer;
+      }
+    }
+    button {
+      display: inline-flex;
+      padding: 18.397px 55.192px;
+      align-items: flex-start;
+      gap: 7.359px;
+      background: rgba(27, 41, 89, 0.4);
+      border-radius: 7.359px;
+      border: none;
+      color: #fff;
+      margin-left: 20px;
+      cursor: pointer;
+    }
+  }
+}

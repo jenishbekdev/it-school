@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.scss'
-import logo from "../../../img/ManBisnace.png"
+import logo from "../../../img/maaan.png"
 
 const Master = () => {
     return (
