@@ -11,15 +11,11 @@ import ParentsDetaile from "./ParentsDetile/ParentsDetaile";
 import AboutCurs from "./components/Main/AboutCurs";
 import Curs from "./components/ParentSchool/Curs";
 import AboutWe from "./components/AboutWe";
-import Data from "./components/Data";
-import Section from "./components/SECTI0ON/inhdex";
 
 function App() {
     return (
         <div className="App">
             <Header/>
-            <Data/>
-            <Section/>
             {/*<Registr/>*/}
 
             <div className='content'>
