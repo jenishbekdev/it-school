@@ -1,7 +1,7 @@
 import React from 'react';
-import {NavLink} from "react-router-dom";
+import './index.scss'
 import {BsArrowRight} from "react-icons/bs";
-import "./index.scss"
+import {NavLink} from "react-router-dom";
 
 const Curs = () => {
     return (
@@ -64,8 +64,7 @@ const Curs = () => {
                 </div>
             </div>
         </div>
-    )
-        ;
+    );
 };
 
 export default Curs;
